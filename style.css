@@ -79,7 +79,7 @@ button:hover {
 			width: 100%;
 		}
 
-		@media (min-width: 786px) {
+		@media (min-width: 1026px) {
 			.image-bar-item-2 {
 				display: inline-flex;
 			}
@@ -93,7 +93,7 @@ button:hover {
 			}
 		}
 
-		@media (min-width: 992px) {
+		@media (min-width: 1126px) {
 			.image-bar-item {
 				padding: 0 14px;
 			}
