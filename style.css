@@ -79,11 +79,7 @@ button:hover {
 			width: 100%;
 		}
 
-		@media (min-width: 1026px) {
-			.image-bar-item-2 {
-				display: inline-flex;
-			}
-
+		@media (min-width: 800px) {
 			.image-bar-item {
 				padding: 0 12px;
 			}
@@ -93,7 +89,11 @@ button:hover {
 			}
 		}
 
-		@media (min-width: 1126px) {
+		@media (min-width: 1026px) {
+			.image-bar-item-2 {
+				display: inline-flex;
+			}
+			
 			.image-bar-item {
 				padding: 0 14px;
 			}
