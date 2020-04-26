@@ -58,7 +58,7 @@ button:hover {
 }
 
 		.content {
-			margin: 130px 0 70px 0;
+			margin: 130px 0 70px;
 		}
 
 		.image-bar {
@@ -80,10 +80,6 @@ button:hover {
 		}
 
 		@media (min-width: 800px) {
-			.image-bar-item {
-				padding: 0 12px;
-			}
-
 			.image-bar {
 				margin: 0 19px;
 			}
@@ -94,10 +90,6 @@ button:hover {
 				display: inline-flex;
 			}
 			
-			.image-bar-item {
-				padding: 0 14px;
-			}
-
 			.image-bar {
 				margin: 0 22px;
 			}
@@ -112,36 +104,28 @@ button:hover {
 				margin: 0 25px;
 			}
 		}
-/*
+/* -----------------------------------------------------------------------------------------------------*/
 		.tiles {
-			margin-top: 100px;
-			width: 100%;
-			display: flex;
-			flex-wrap: wrap;
+			margin: 100px;
+			display: grid;
+			align-items: center;
 			justify-content: center;
+			grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+			justify-content: space-between;
 		}
 
 		.tile {
 			display: inline-flex;
-			width: 336px;
-			height: 360px;
-			padding: 25px;
-			border: 1px solid black;
-		}
-
-		.style_no {
-			background-color: transparent;
-			border: 1px solid black;
+			margin: 20px 15px;
 		}
 
 		.overlay {
 			position: relative;
-			border: 1px solid black;
 		}
 
 		.overlay img {
-			width: 100%;
-			border: 1px solid black;
+			width: auto;
+			overflow: hidden;
 		}
 
 		.overlay_name {
@@ -149,26 +133,26 @@ button:hover {
 			background-color: transparent;
 			left: 0;
 			top: 0;
-			opacity: 0;
+			margin: 20px;
+		}
+		/*	opacity: 0;
 			transition: opacity 0.1s ease-in-out;
-			border: 1px solid black;
 		}
 
 		.tile:hover .overlay_name {
 			opacity: 1;
 		}
-
+*/
 		.overlay_price {
 			position: absolute;
-			background-color: transparent;
 			right: 0;
 			bottom: 0;
 			text-align: right;
 			color: #818181;
-			margin: 20px 24px;
-			border: 1px solid black;
+			font-size: 16px;
+			margin: 20px;
 		}
-*/
+
 /* SCROLL */
 
 		::-webkit-scrollbar {
