@@ -108,24 +108,20 @@ button:hover {
 		.tiles {
 			margin: 100px;
 			display: grid;
-			align-items: center;
+			grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
 			justify-content: center;
-			grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-			justify-content: space-between;
+			grid-column-gap: 30px;
+			grid-row-gap: 40px;
 		}
 
 		.tile {
 			display: inline-flex;
-			margin: 20px 15px;
+			align-items: center;
+			justify-content: center;
 		}
 
 		.overlay {
 			position: relative;
-		}
-
-		.overlay img {
-			width: auto;
-			overflow: hidden;
 		}
 
 		.overlay_name {
