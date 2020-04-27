@@ -106,9 +106,9 @@ button:hover {
 		}
 /* -----------------------------------------------------------------------------------------------------*/
 		.tiles {
-			margin: 100px;
+			margin: 100px 60px;
 			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+			grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 			justify-content: center;
 			grid-column-gap: 30px;
 			grid-row-gap: 40px;
@@ -122,6 +122,10 @@ button:hover {
 
 		.overlay {
 			position: relative;
+		}
+
+		.overlay img {
+			width: 100%;
 		}
 
 		.overlay_name {
